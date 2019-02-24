@@ -304,7 +304,8 @@
 	<script type="text/javascript" src="js/jquery.youtubebackground.js"></script>
 	<script>
 		$(document).ready(function () {
-			$(".se-pre-con").fadeOut("slow");
+			$(".se-pre-con").delay(5000).fadeOut("slow");
+
 			var $window           = $(window),
 				win_height_padded = $window.height() * 1.1,
 				isTouch           = Modernizr.touch;
