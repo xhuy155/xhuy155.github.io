@@ -2,100 +2,484 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 	<title>Minishadow Portfolio</title>
 	<link rel="stylesheet" href="css/minishadow.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'> 
+
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-			
+	
+
 	<style type="text/css">
 	@font-face {
 		font-family: "My Custom Font";
 		src: url(font/VNF-ProximaNovaCond-Regular.ttf) format("truetype");
 	}
-	p.customfont { 
+	p.customfont {
 		font-family: "My Custom Font";
+	}
+
+	.se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url(images/Preloader_8.gif) center no-repeat #fff;
 	}
 	</style>
 </head>
-<body style="min-height : 2000px;">
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: rgba(0,0,0,.8) !important;">
+<body>
+	<div class="se-pre-con"></div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
-		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			  <span class="sr-only">Toggle navigation</span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#"></a>
-		  </div>
-		  <div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav" >
-			  <li class="header_nav"><a href="#">HELLO</a></li>
-			  <li class="header_nav"><a href="#about">SKILLS</a></li>
-			  <li class="header_nav"><a href="#contact">WORKS</a></li>
-			  <li class="header_nav"><a href="#contact">ABOUT</a></li>
-			  <li class="header_nav"><a href="#contact">CONTACT</a></li>
-			</ul>
-		  </div><!--/.nav-collapse -->
-		</div>
-	</div>
 
-	<div class="container" style="height : 100px;"></div>
-
-	<div class="container" style="min-height: 100vh;">
-		<span class="hello-text" style="color: hsl(350, 100%, 62%); word-spacing: 0px; letter-spacing: 0.4px; font-size: 133.682px;">HELLO</span>
-		<span class="hello-text" style="color: rgb(255, 61, 126); word-spacing: -6px; letter-spacing: 0px; font-size: 94.839px;">I'm Huy</span>
-		<span class="hello-text" style="color: rgb(195, 92, 255); word-spacing: 0.5px; letter-spacing: 0px; font-size: 27.736px;">I am a creative web developer</span>
-		<span class="hello-text" style="color: rgb(88, 125, 249); padding-bottom: 0px; word-spacing: 0.333px; letter-spacing: 0px; font-size: 25.903px;">I stand on a sweet place where</span>
-		<span class="hello-text" style="color: rgb(88, 125, 249); padding-bottom: 0px; word-spacing: 1px; letter-spacing: 0px; font-size: 55.472px;">design & code</span>
-		<span class="hello-text" style="color: rgb(88, 125, 249); word-spacing: 0px; letter-spacing: -0.364px; font-size: 71.707px;">intersects</span>
-	</div>
-
-	<div class="separator"></div>
-
-	<div class="container">
-		<div class="row">
-			<div id="skills-header">SKILLS</div>
-			<div id="skills-underline"></div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x skills-icon">
-					<i class="fa fa-circle-thin fa-stack-2x"></i>
-					<i class="fa fa-lock fa-stack-1x"></i>
-				</span>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x skills-icon">
-					<i class="fa fa-circle-thin fa-stack-2x"></i>
-					<i class="fa fa-lock fa-stack-1x"></i>
-				</span>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x skills-icon">
-					<i class="fa fa-circle-thin fa-stack-2x"></i>
-					<i class="fa fa-lock fa-stack-1x"></i>
-				</span>
-			</div>
-			<div class="col-md-3">
-				<span class="fa-stack fa-4x skills-icon">
-					<i class="fa fa-circle-thin fa-stack-2x"></i>
-					<i class="fa fa-lock fa-stack-1x"></i>
-				</span>
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item header_nav">
+						<a class="nav-link" href="#">HELLO</a>
+					</li>
+					<li class="nav-item header_nav">
+						<a class="nav-link" href="#">SKILLS</a>
+					</li>
+					<li class="nav-item header_nav">
+						<a class="nav-link" href="#" tabindex="-1">WORKS</a>
+					</li>
+					<li class="nav-item header_nav">
+						<a class="nav-link" href="#" tabindex="-1">ABOUT</a>
+					</li>
+					<li class="nav-item header_nav">
+						<a class="nav-link" href="#" tabindex="-1">CONTACT</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
+	<main role="main">
+		<div class="container" style="height : 100px;">
 
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		</div>
+
+		<div class="container" style="min-height: 100vh;">
+			<span class="flex-hello">HELLO</span>
+			<span class="hello-text" style="color: rgb(255, 61, 126); word-spacing: -6px; letter-spacing: 0px; font-size: 94.839px;">I'm Huy</span>
+			<span class="hello-text" style="color: rgb(195, 92, 255); word-spacing: 0.5px; letter-spacing: 0px; font-size: 27.736px;">I am a creative web developer</span>
+			<span class="hello-text" style="color: rgb(88, 125, 249); padding-bottom: 0px; word-spacing: 0.333px; letter-spacing: 0px; font-size: 25.903px;">I stand on a sweet place where</span>
+			<span class="hello-text" style="color: rgb(88, 125, 249); padding-bottom: 0px; word-spacing: 1px; letter-spacing: 0px; font-size: 55.472px;">design & code</span>
+			<span class="hello-text" style="color: rgb(88, 125, 249); word-spacing: 0px; letter-spacing: -0.364px; font-size: 70.707px;">intersects</span>
+		</div>
+
+		<div class="separator">
+
+		</div>
+
+		<div class="container" style="min-height: 100vh">
+			<div class="row" style="margin-top : 80px;">
+				<div class="revealOnScroll section-header" data-animation="slideInLeft">SKILLS</div>
+				<div class="revealOnScroll section-underline" data-animation="slideInRight"></div>
+			</div>
+
+			<div class="row" style="margin-top : 40px;">
+				<div class="col-md-3">
+					<span class="fa-stack fa-4x skills-icon">
+						<i class="fa fa-circle-thin fa-stack-2x"></i>
+						<i class="fa fa-lock fa-stack-1x"></i>
+					</span>
+					<span class="skills-name">Smooth</span>
+					<div class="skills-description">Fast load time, lag free interation is my first priority</div>
+				</div>
+				<div class="col-md-3">
+					<span class="fa-stack fa-4x skills-icon">
+						<i class="fa fa-circle-thin fa-stack-2x"></i>
+						<i class="fa fa-lock fa-stack-1x"></i>
+					</span>
+					<span class="skills-name">Responsive</span>
+					<div class="skills-description">I love when it comes to everything</div>
+				</div>
+				<div class="col-md-3">
+					<span class="fa-stack fa-4x skills-icon">
+						<i class="fa fa-circle-thin fa-stack-2x"></i>
+						<i class="fa fa-lock fa-stack-1x"></i>
+					</span>
+					<span class="skills-name">Intuitive</span>
+					<div class="skills-description">Strong preference for easy to use, intuitive UX/UI.</div>
+				</div>
+				<div class="col-md-3">
+					<span class="fa-stack fa-4x skills-icon">
+						<i class="fa fa-circle-thin fa-stack-2x"></i>
+						<i class="fa fa-lock fa-stack-1x"></i>
+					</span>
+					<span class="skills-name">Less is more</span>
+					<div class="skills-description">Simple but effective</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top : 40px;">
+				<div class="col-md-6" style="margin-bottom: 20px;">
+					<img style="max-width: 100%; max-height: 100%; display: block; margin: 0 auto;" src="images/dev.jpeg" alt="">
+				</div>
+				<div class="col-md-6" id="revealBar">
+					<div class="progress-bar-name">HTML</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="html-bar" class="progress-bar" role="progressbar" style="background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress-bar-name">CSS</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="css-bar" class="progress-bar" role="progressbar" style="width: 25%; background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress-bar-name">JS</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="js-bar" class="progress-bar" role="progressbar" style="width: 25%; background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress-bar-name">UI/UX</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="ui-bar" class="progress-bar" role="progressbar" style="width: 25%; background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress-bar-name">Java</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="java-bar" class="progress-bar" role="progressbar" style="width: 25%; background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress-bar-name">SQL</div>
+					<div class="progress" style="width: 80%; float: left; height: 28px; margin-bottom: 15px;">
+						<div id="sql-bar" class="progress-bar" role="progressbar" style="width: 25%; background-color: rgb(44, 87, 228); font-size: 14px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="separator">
+
+		</div>
+
+		<div class="container" style="min-height: 100vh; margin-bottom: 60px;">
+			<div class="row" style="margin-top : 80px;">
+					<div class="revealOnScroll section-header" data-animation="slideInLeft">WORKS</div>
+					<div class="revealOnScroll section-underline" data-animation="slideInRight"></div>
+			</div>
+
+			<div class="row" style="margin-top : 40px;">
+				<div class="col-md-4" style="margin-top : 20px;">
+					<div style="height: 200px;"><img style="max-width: 100%; height: 100%; display: block; margin: 0 auto;" src="images/disaster.jpg" alt=""></div>
+					<span class="project-name">Disaster Preventation</span>
+					<div><span style="font-weight: bold;"> ● Project description:</span> An application is used to inform disater such as earthquake, fire, typhoon in Japan. Monitoring and controling devices, transceiver station on map API</div>
+					<div><span style="font-weight: bold;"> ● Team size:</span> 22</div>
+					<div><span style="font-weight: bold;"> ● Duration:</span> 6 months</div>
+					<div><span style="font-weight: bold;"> ● Responsiblities:</span> Develop and fix the application’s defect base on requirement.</div>
+					<div><span style="font-weight: bold;"> ● Accomplishments:</span> Basic understanding Spring, Hibernate, JavaFX and threads. Got experience in working/communicate with Janapanse customers.</div>
+					<div><span style="font-weight: bold;"> ● Technologies:</span> JavaFX, Spring, Hibernate, PostgresSQL</div>					
+				</div>
+				<div class="col-md-4" style="margin-top : 20px;">
+					<div style="height: 200px;"><img style="width: 100%; height: 100%; display: block; margin: 0 auto;" src="images/construction.jpg" alt=""></div>
+					<span class="project-name">Construction Management and Economics</span>
+					<div><span style="font-weight: bold;"> ● Project description:</span> An web application is created to manage constructions such as workers, accountant, business. </div>
+					<div><span style="font-weight: bold;"> ● Team size:</span> 25</div>
+					<div><span style="font-weight: bold;"> ● Duration:</span> 2 years</div>
+					<div><span style="font-weight: bold;"> ● Responsiblities:</span> Communicating with customer to get clear requirements. Develop, fix and test the application’s defect base on requirement. Prepare document, technical guide and tools for developers joining in the middle of the project. </div>
+					<div><span style="font-weight: bold;"> ● Accomplishments:</span> Understanding PrimeFace framework, mybatis persistence framework. Strong improvement of SQL due to heavy query of the project.</div>
+					<div><span style="font-weight: bold;"> ● Technologies:</span> Java8, Mybatis, PrimeFace, PostgresSQL</div>		
+				</div>
+				<div class="col-md-4" style="margin-top : 20px;">
+					<div style="height: 200px;"><img style="width: 100%; height: 100%; display: block; margin: 0 auto;" src="images/warehouse.jpg" alt=""></div>
+					<span class="project-name">Warehouse Management</span>
+					<div><span style="font-weight: bold;"> ● Project description:</span> An web application is created to manage warehouse, transportation, import & export.</div>
+					<div><span style="font-weight: bold;"> ● Team size:</span> 5</div>
+					<div><span style="font-weight: bold;"> ● Duration:</span> 3 months</div>
+					<div><span style="font-weight: bold;"> ● Responsiblities:</span> Communicating with customer to get clear requirements. Develop three new modules.</div>
+					<div><span style="font-weight: bold;"> ● Accomplishments:</span> Understanding framework of IBM company. This framework was created in 2002.</div>
+					<div><span style="font-weight: bold;"> ● Technologies:</span> Unique framework of IBM company</div>	
+				</div>
+				<div class="col-md-12" style="margin-top : 20px;">
+					<div class="row">
+						<div class="col">
+								<img class="img-fluid" src="images/nhahangnga.jpg" alt="">
+						</div>
+					</div>
+					<span class="project-name">Restaurant landing page and management systems</span>
+					<div><span style="font-weight: bold;"> ● Project description:</span> A lannding page and management system for Northern Vietnamese Cuisine restaurant with signature Asian crap dishes such as Carp dumplings, Carp Cajun. An application which is linking between customers, kitchen and cashier </div>
+					<div><span style="font-weight: bold;"> ● Team size:</span> 3</div>
+					<div><span style="font-weight: bold;"> ● Duration:</span> On going</div>
+					<div><span style="font-weight: bold;"> ● Responsiblities:</span> Gathering requirements and deploying. Giving task and calculating time for each modules as team leader.</div>
+					<div><span style="font-weight: bold;"> ● Accomplishments:</span> Usinng and understanding AngularJS, Adobe Phonegap</div>
+					<div><span style="font-weight: bold;"> ● Technologies:</span> Java, AngularJS, Spring, Hibernate, Nodejs</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="separator">
+
+		</div>
+
+		<div class="container" style="min-height: 100vh">
+			<div class="row" style="margin-top : 80px;">
+					<div class="revealOnScroll section-header" data-animation="slideInLeft">ABOUT</div>
+					<div class="revealOnScroll section-underline" data-animation="slideInRight"></div>
+			</div>
+
+			<div class="row" style="margin-top : 40px;">
+				<div class="col-md-3">
+					<img class="img-fluid" src="images/avatar.jpg" alt="avatar">
+				</div>
+
+				<div class="col-md-9" style="padding-top: 10px;">
+					My full name is Đinh Xuân Huy, a back-end developer with 3 years of experience in Java technologies. 
+					Before becoming developer, I've worked for travel industries for 2 years. 
+					That was amazing time when I've worked with extraordinary people from many places such as Intercontinental DaNang Sun Peninsula, Princess Cruise. 
+					But in the past few years, I have turned my focus to developer as a further vision for my career.<br><br>
+					Learning new languages and technologies is what I am passionate about. 
+					I am considered a team-player because I like to help other and tend to work well within groups.<br><br>
+					In my spare time you’ll find me exploring and traveling the world. 
+					I love new adventures, meeting new people and getting more ideas for self-development. 
+					Sometimes, I spend time to play video games<br><br>
+					My favourite books are "One Minute Manager", "Clean code", "Mastering Regular Expressions from O'Reilly".
+				</div>
+			</div>
+			<div class="row" style="margin-top : 40px;">
+				<div class="col-md-6">
+						<span class="trait" style="color : rgb(255, 8, 90);">THINGS I LOVE</span>
+						<div class="trait-name">Myself</div>
+						<div class="trait-description">Sometime I love myself</div>
+						<div class="trait-name">Video game</div>
+						<div class="trait-description">I love playing video games.</div>
+						<div class="trait-name">Technologies</div>
+						<div class="trait-description">Technologies shape the world we are</div>
+						<div class="trait-name">Beauty</div>
+						<div class="trait-description">My "go to" is beautiful girls</div>
+					</div>
+		
+					<div class="col-md-6">
+						<span class="trait" style="color : rgb(26, 170, 21);">THINGS I HATE</span>
+						<div class="trait-name">Myself</div>
+						<div class="trait-description">Sometime I hate myself</div>
+						<div class="trait-name">Other people work</div>
+						<div class="trait-description">Who doesn't?</div>
+						<div class="trait-name">Bad luck</div>
+						<div class="trait-description">I hate thing I can't control</div>
+						<div class="trait-name">Fake promises</div>
+						<div class="trait-description">If you can’t keep one, don’t make one</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="separator">
+
+		</div>
+
+		<div class="container" style="min-height: 100vh;">
+			<div class="row" style="margin-top : 80px;">
+					<div class="revealOnScroll section-header" data-animation="slideInLeft" style="color : white;">CONTACT</div>
+					<div class="revealOnScroll section-underline" data-animation="slideInRight" style="background-color: white"></div>
+			</div>
+
+			<div class="row" style="margin-top : 100px;">
+				<div class="col-md-3">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/huydinh155"><img src="images/facebook.png" style="width : 150px; height : 150px; display: block; margin: 0 auto;" alt="facebook"></a>
+				</div>
+				<div class="col-md-3">
+					<a target="_blank" rel="noopener noreferrer" href="mailto:huydx155@gmail.com?Subject=Hello Kenny"><img src="images/gmail.png" style="width : 150px; height : 150px; display: block; margin: 0 auto;" alt="gmail"></a>
+				</div>
+				<div class="col-md-3">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/huydx/"><img src="images/instagram.png" style="width : 150px; height : 150px; display: block; margin: 0 auto;" alt="instagram"></a>
+				</div>
+				<div class="col-md-3">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/huydinh155"><img src="images/steam.png" style="width : 150px; height : 150px; display: block; margin: 0 auto;" alt="steam">
+				</div>
+			</div>
+		</div>
+	</main>
+	<div id="background-video"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script type="text/javascript" src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.youtubebackground.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".se-pre-con").fadeOut("slow");
+			var $window           = $(window),
+				win_height_padded = $window.height() * 1.1,
+				isTouch           = Modernizr.touch;
+
+			var isFill = false;
+
+			var isDisplayVideo = true;
+			var screenWidth = $(document).width();
+
+			if(screenWidth < 1200) {
+				isDisplayVideo = false;
+				$("#background-video").remove();
+			}
+
+			if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+			$window.on('scroll', revealOnScroll);
+
+			function revealOnScroll() {
+				var scrolled = $window.scrollTop(),
+					win_height_padded = $window.height() * 1.1;
+
+				// Showed...
+				$(".revealOnScroll:not(.animated)").each(function () {
+					var $this     = $(this),
+						offsetTop = $this.offset().top;
+
+					if (scrolled + win_height_padded > offsetTop) {
+						if ($this.data('timeout')) {
+							window.setTimeout(function(){
+							$this.addClass('animated ' + $this.data('animation'));
+						}, parseInt($this.data('timeout'),10));
+						} else {
+							$this.addClass('animated ' + $this.data('animation'));
+						}
+					}
+				});
+				// Hidden...
+				$(".revealOnScroll.animated").each(function (index) {
+					var $this     = $(this),
+						offsetTop = $this.offset().top;
+					if (scrolled + win_height_padded < offsetTop) {
+						$(this).removeClass('animated slideInRight slideInLeft')
+					}
+				});
+
+				var offSetBar = $("#revealBar").offset().top;
+
+				if (scrolled + win_height_padded > offSetBar && isFill == false) {
+					fillHtmlbar();
+					fillCssbar();
+					fillJsbar();
+					fillUIbar();
+					fillJavabar();
+					fillSQLbar();
+
+					isFill = true;
+				} else if (scrolled + win_height_padded < offSetBar) {
+					unfillbar();
+
+					isFill = false;
+				}
+			}
+
+			revealOnScroll();
+
+			function fillHtmlbar() { 
+				var rong = 1;
+				var id = setInterval(frame, 10);
+				function frame() {
+					if (rong >= 60) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#html-bar").width(rong + '%');
+						$("#html-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function fillCssbar() { 
+				var rong = 1;
+				var id = setInterval(frame, 12);
+				function frame() {
+					if (rong >= 60) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#css-bar").width(rong + '%');
+						$("#css-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function fillJsbar() { 
+				var rong = 1;
+				var id = setInterval(frame, 14);
+				function frame() {
+					if (rong >= 55) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#js-bar").width(rong + '%');
+						$("#js-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function fillUIbar() { 
+				var rong = 1;
+				var id = setInterval(frame, 16);
+				function frame() {
+					if (rong >= 80) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#ui-bar").width(rong + '%');
+						$("#ui-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function fillJavabar() { 
+				var rong = 1;
+				var id = setInterval(frame, 18);
+				function frame() {
+					if (rong >= 85) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#java-bar").width(rong + '%');
+						$("#java-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function fillSQLbar() { 
+				var rong = 1;
+				var id = setInterval(frame, 20);
+				function frame() {
+					if (rong >= 90) {
+						clearInterval(id);
+					} else {
+						rong++; 
+						$("#sql-bar").width(rong + '%');
+						$("#sql-bar").html(rong * 1 + '%');
+					}
+				}
+			}
+
+			function unfillbar() { 
+				$(".progress-bar").width(0);
+				$(".progress-bar").html('');
+			}
+
+			if(isDisplayVideo == true) {
+				jQuery(function($) {
+					$('#background-video').YTPlayer({
+						fitToBackground: false,
+						videoId: 'VABh4TCQEPw',
+						pauseOnScroll: false,
+						callback: function() {
+						videoCallbackEvents();
+						}
+					});
+				
+					var videoCallbackEvents = function() {
+						var player = $('#background-video').data('ytPlayer').player;
+					
+						player.addEventListener('onStateChange', function(event){
+						});
+					}
+				});
+			}
+		});
+	</script>
 </body>
 </html>

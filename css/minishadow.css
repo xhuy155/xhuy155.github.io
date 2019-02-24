@@ -8,13 +8,26 @@
     text-shadow: 0 1px #000;
     color: #fff !important;
     font-family: ProximaNova;
-    font-size: 16px;
+    font-size: 22px;
 }
 
-.header_nav a:hover
+.flex-hello
 {
-    color: red;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    /* font-size: 133.682px; */
+    font-size: calc(94.839px + (133.682 - 94.839) * ((100vw - 300px) / (1600 - 300)));
+    color: hsl(350, 100%, 62%);
+    word-spacing: 0px;
+    letter-spacing: 0.4px;
 }
+
+/* @media (min-width: 320px) {
+    .flex-hello {
+        font-size: 94.839px;
+    }
+} */
 
 .hello-text
 {
@@ -30,26 +43,19 @@
     background: hsla(0,0%,0%,.1);
 }
 
-
-#skills
-{
-    width : 1200px;
-    height : 100vh;
-    margin : 0 auto;
-}
-
-#skills-header
+.section-header
 {
     font-size: 30pt;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     -webkit-font-smoothing : antialiased;
     text-align: center;
-    margin-top: 50px;
+    margin: 0 auto;
     color: #444649;
+    width: 100%;
 }
 
-#skills-underline
+.section-underline
 {
     width: 80px;
     height: 4px;
@@ -62,5 +68,88 @@
 {
     color: hsl(350, 100%, 62%);
     display: block !important;
+    margin: 0 auto;
+}
+
+.skills-name
+{
+    display: table;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17pt;
+    font-weight: bold;
+    -webkit-font-smoothing : antialiased;
+    margin: 0 auto;
+}
+
+.skills-description
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+}
+
+.progress-bar-name
+{
+    width: 20%;
+    background-color: rgb(88, 125, 249);
+    color : white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+
+.project-name
+{
+    display: table;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17pt;
+    font-weight: bold;
+    -webkit-font-smoothing : antialiased;
+    margin: 10px auto;
+}
+
+#background-video{
+    position: absolute;
+    background: transparent;
+    top: 577vh;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+}
+   
+.ytplayer-container{
+    position: relative;
+    top: 577vh;
+}
+
+.trait
+{
+    display: table;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    -webkit-font-smoothing : antialiased;
+    margin: 10px auto;
+}
+
+.trait-name
+{
+    display: table;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    -webkit-font-smoothing : antialiased;
+    margin: 10px auto 0 auto;
+}
+
+.trait-description
+{
+    display: table;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    -webkit-font-smoothing : antialiased;
     margin: 0 auto;
 }
