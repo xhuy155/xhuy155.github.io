@@ -114,15 +114,10 @@
 #background-video{
     position: absolute;
     background: transparent;
-    top: 577vh;
+    top: 581vh;
     width: 100%;
     height: 100%;
     z-index: -999;
-}
-   
-.ytplayer-container{
-    position: relative;
-    top: 577vh;
 }
 
 .trait
