@@ -2,9 +2,6 @@ $(".se-pre-con").fadeOut("slow");
 
 $("#myVideo").get(0).play();
 
-var backgroundVideoPosition = $("#background-video-position").offset().top;
-$("#background-video").css({'top' : backgroundVideoPosition - 45 + 'px'});
-
 $(".nav-link").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
