@@ -32,7 +32,7 @@ var isFill = false;
 
 var screenWidth = $(document).width();
 if(screenWidth < 1200) {
-    $("#background-video").remove();
+    $("#myVideo").remove();
 } else {
     $("#notShowVideo1").css("color","white");
     $("#notShowVideo2").css("background-color","white");
