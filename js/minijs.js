@@ -136,7 +136,7 @@ function fillUIbar() {
     var rong = 1;
     var id = setInterval(frame, 16);
     function frame() {
-        if (rong >= 80) {
+        if (rong >= 75) {
             clearInterval(id);
         } else {
             rong++; 
@@ -150,7 +150,7 @@ function fillJavabar() {
     var rong = 1;
     var id = setInterval(frame, 18);
     function frame() {
-        if (rong >= 85) {
+        if (rong >= 80) {
             clearInterval(id);
         } else {
             rong++; 
@@ -164,7 +164,7 @@ function fillSQLbar() {
     var rong = 1;
     var id = setInterval(frame, 20);
     function frame() {
-        if (rong >= 90) {
+        if (rong >= 80) {
             clearInterval(id);
         } else {
             rong++; 
