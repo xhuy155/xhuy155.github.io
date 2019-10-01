@@ -50,7 +50,6 @@
     font-weight: bold;
     -webkit-font-smoothing : antialiased;
     text-align: center;
-    margin: 0 auto;
     color: #444649;
     width: 100%;
 }
@@ -61,14 +60,12 @@
     height: 4px;
     display: block;
     background-color: #444649;
-    margin: 0 auto;
 }
 
 .skills-icon
 {
     color: hsl(350, 100%, 62%);
     display: block !important;
-    margin: 0 auto;
 }
 
 .skills-name
@@ -78,7 +75,6 @@
     font-size: 17pt;
     font-weight: bold;
     -webkit-font-smoothing : antialiased;
-    margin: 0 auto;
 }
 
 .skills-description
@@ -146,5 +142,12 @@
     font-family: 'Raleway', sans-serif;
     font-size: 10pt;
     -webkit-font-smoothing : antialiased;
+}
+
+.txt-align-left {
+    text-align: left;
+}
+
+.margin-auto {
     margin: 0 auto;
 }
