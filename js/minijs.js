@@ -70,22 +70,22 @@ function revealOnScroll() {
         }
     });
 
-    var offSetBar = $("#revealBar").offset().top;
+    // var offSetBar = $("#revealBar").offset().top;
 
-    if (scrolled + win_height_padded > offSetBar && isFill == false) {
-        fillHtmlbar();
-        fillCssbar();
-        fillJsbar();
-        fillUIbar();
-        fillJavabar();
-        fillSQLbar();
+    // if (scrolled + win_height_padded > offSetBar && isFill == false) {
+    //     fillHtmlbar();
+    //     fillCssbar();
+    //     fillJsbar();
+    //     fillUIbar();
+    //     fillJavabar();
+    //     fillSQLbar();
 
-        isFill = true;
-    } else if (scrolled + win_height_padded < offSetBar) {
-        unfillbar();
+    //     isFill = true;
+    // } else if (scrolled + win_height_padded < offSetBar) {
+    //     unfillbar();
 
-        isFill = false;
-    }
+    //     isFill = false;
+    // }
 }
 
 revealOnScroll();
